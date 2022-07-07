@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Stop Fly</title>
+</head>
+<body>
+    <section class="gameBoard">
+        <div id="divScore">
+            <p id="score" class="paragrafo"></p>
+            <p id="time" class="paragrafo"></p>
+        </div>
+        <div class="divStart" onclick="play()">
+            <h1>STOP FLY</h1>
+            <input type="button" value="START">
+            <img src="imagens/aviao.png">
+        </div>
+        <section class="world">
+            <h1>SELECIONE UM MUNDO</h1>
+            <div id="div1" onclick="start(),city()">
+                <p>CIDADE</p>
+            </div>
+            <div id="div2" onclick="start(),lago()">
+                <p>LAGO</p>
+            </div>
+            <div id="div3" onclick="start(),espaco()">
+                <p>ESPAÇO</p>
+            </div>
+        </section>
+        
+        
+        <img src="imagens/teco-teco.png" class="alvo alvoAnimation" onclick="acertou()">
+        <img src="imagens/icons8-cronômetro-64.png" id="bonusTime" onclick="bonusTimes()">
+        <img src="imagens/icons8-velocímetro-64.png" id="bonusSpeed" onclick="bonusSpeeds()">
+    </section>
+</body>
+</html>

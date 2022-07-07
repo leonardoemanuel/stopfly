@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: normal;
+}
+.gameBoard{
+    
+    width: 100%;
+    height:100vh;
+    overflow: hidden;
+    position: relative;
+    background-image:url(imagens/fundo-cidadex.png);
+    background-size: cover;
+    background-position: center bottom;
+}
+.gameBoard #divScore{
+    width: 20vh;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.gameBoard #divScore .paragrafo{
+    text-align: center;
+    flex: 1;
+    font-size:2rem;
+    padding: 0.1rem;
+    display: inline;
+    width: 100%;
+}
+/*------------------world---------------*/
+section.world{
+    background-color: white;
+    display: none;
+    flex-direction: column;
+    max-width:30rem;
+    margin: auto;
+    height:40vh;
+    gap:0.1rem;
+    padding:0.1rem;
+}
+section.world h1{
+    text-align: center;
+    font-size: 1.4rem;
+}
+section.world p{
+    background-color: white;
+    font-size:2rem;
+    padding: 0.1rem;
+}
+section.world #div1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex:1;
+    background-image: url(imagens/fundo-cidade.png);
+    background-size: cover;
+    background-position: center bottom;
+}
+section.world #div2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    background-image: url(imagens/fundo-lago.png);
+    background-size:cover;
+    background-position: center;
+}
+section.world #div3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    background-image: url(imagens/fundo-espaco.jpg);
+   background-size: cover;
+   background-position: center;
+}
+/*-----------------------------------------*/
+img#bonusTime{
+    top: -5rem;
+    left:20%;
+    border-radius: 50%;
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    background-color:yellow;
+}
+img#bonusSpeed{
+    top: -5rem;
+    right: 20%;
+    border-radius: 50%;
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    background-color:yellow;
+}
+/*-------------------start---------------------*/
+.divStart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    max-width:30rem;
+    height:auto;
+    background-color:white;
+    margin: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.divStart h1{
+    margin: 1rem;
+    font-size: 2.5rem;
+}
+.divStart input{
+    width: 100%;
+    font-size: 2rem;
+    background-color:greenyellow;
+    border: none;
+}
+.divStart input:hover{
+    background-color:rgb(134, 197, 40);
+    cursor: pointer;
+}
+.divStart img{
+    width: 80%;
+}
+
+/*---------------------------------------------*/
+.alvo{
+    width:200px;
+    position: absolute;
+    bottom: 50%;
+    right:-200px;
+    
+}
+.alvoAnimation{
+    animation:run 5s infinite linear;
+}
+@keyframes run{
+    from{
+        right: -200px;
+    }
+    to{
+        right: 100%;
+    }
+}
+@keyframes bonus{
+    0%{
+        top: -5rem;
+    }
+    10%{
+        top: 10%;
+    }
+    20%{
+        top: 20%;
+    }
+    30%{
+        top: 30%;
+    }
+    40%{
+        top: 40%;
+    }
+    50%{
+        top: 50%;
+    }
+    60%{
+        top: 60%;
+    }
+    70%{
+        top: 70%;
+    }
+    80%{
+        top: 80%;
+    }
+    90%{
+        top: 90%;
+    }
+    100%{
+        top: 100%;
+    }
+}
