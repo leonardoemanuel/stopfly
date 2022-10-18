@@ -1,0 +1,16 @@
+@charset "UTF-8";
+section.gameBoard{
+    display: none;
+}
+section.alert{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 100%;
+    text-align: center;
+}
+.alert p{
+    font-size: 1.6rem;
+}
+.alert img{
+    margin-top: 4rem;
+    width: 80%;
+}
